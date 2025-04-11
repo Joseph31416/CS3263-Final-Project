@@ -44,7 +44,7 @@ Once the dataset is created, you can run the training script:
 ```bash
 sbatch scripts/run_finetuning.sh --model_id <model_id> -s ./data/text/<task>/train.json -e ./data/text/<task>/test.json -n 3
 ```
-Refer to the `scripts/run_finetuning.sh` file for more options.
+Refer to the [`scripts/run_finetuning.sh`](scripts/run_finetuning.sh) file for more options.
 
 ### Evaluation
 To evaluate the model, you can run the evaluation script:
@@ -69,3 +69,14 @@ sbatch scripts/run_eval.sh -s evaluation/evaluate_qwen_vl.py -a ./lora_output/<m
 - "puzzle_solving_small"
 - "puzzle_solving_large"
 - "ensemble"
+
+## Acknowledgements
+
+The finetuning scripts are based off:
+- [Qwen2-Vision-Finetune](https://github.com/2U1/Qwen2-VL-Finetune)
+- [Phi3-Vision-Finetune](https://github.com/2U1/Phi3-Vision-Finetune)
+- [Llama3-Vision-Finetune](https://github.com/2U1/Llama3.2-Vision-Finetune)
+
+The dataset is sourced from:
+- [ChessGPT](https://github.com/waterhorse1/ChessGPT)
+- [Big-Bench](https://github.com/google/BIG-bench)
