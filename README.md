@@ -5,17 +5,17 @@
 ### 1. Create a Virtual Environment
 Run the following command to create a virtual environment:
 ```bash
-python3 -m venv venv
+python3 -m venv .venv
 ```
 
 ### 2. Activate the Virtual Environment
 - On macOS/Linux:
     ```bash
-    source venv/bin/activate
+    source .venv/bin/activate
     ```
 - On Windows:
     ```bash
-    venv\Scripts\activate
+    .venv\Scripts\activate
     ```
 
 ### 3. Install Requirements
